@@ -66,23 +66,31 @@ packages:
     dependency: "direct dev"
     description:
       name: flutter_lints
-      sha256: a25a15ebbdfc33ab1cd26c63a6ee519df92338a9c10f122adda92938253bef04
+      sha256: e2a421b7e59244faef694ba7b30562e489c2b489866e505074eb005cd7060db7
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.3"
+    version: "3.0.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+  linked_scroll_controller:
+    dependency: transitive
+    description:
+      name: linked_scroll_controller
+      sha256: e6020062bcf4ffc907ee7fd090fa971e65d8dfaac3c62baf601a3ced0b37986a
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.0"
   lints:
     dependency: transitive
     description:
       name: lints
-      sha256: "0a217c6c989d21039f1498c3ed9f3ed71b354e69873f13a8dfc3c9fe76f1b452"
+      sha256: cbf8d4b858bb0134ef3ef87841abdf8d63bfc255c266b7bf6b39daa1085c4290
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.1"
+    version: "3.0.0"
   matcher:
     dependency: transitive
     description:
@@ -123,6 +131,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.3"
+  reorderable_tabbar:
+    dependency: "direct main"
+    description:
+      name: reorderable_tabbar
+      sha256: dd19d7b6f60f0dec4be02ba0a2c860f9acbe5a392cb8b5b8c1417cbfcbfe923f
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.6"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -168,6 +184,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  tab_indicator_styler:
+    dependency: transitive
+    description:
+      name: tab_indicator_styler
+      sha256: "9e7e90367e20f71f3882fc6578fdcced35ab1c66ab20fcb623cdcc20d2796c76"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   term_glyph:
     dependency: transitive
     description:
@@ -202,3 +226,4 @@ packages:
     version: "0.3.0"
 sdks:
   dart: ">=3.2.3 <4.0.0"
+  flutter: ">=1.17.0"
