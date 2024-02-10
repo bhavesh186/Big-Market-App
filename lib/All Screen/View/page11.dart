@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../Common/app_text.dart';
 import '../../Common/common_appbar.dart';
+import '../../Common/globle_color.dart';
 
 class PageEleven extends StatelessWidget {
   const PageEleven({super.key});
@@ -21,7 +22,7 @@ class PageEleven extends StatelessWidget {
               padding: EdgeInsets.zero,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
-                  height: 120,
+                  height: 110,
                   decoration: BoxDecoration(
                       border: Border(
                     bottom: BorderSide(
@@ -33,7 +34,7 @@ class PageEleven extends StatelessWidget {
                   child: Row(
                     children: [
                       Container(
-                        width: 110,
+                        width: 90,
 
                         child: Image.asset(AppImage.pageelevenimg[index], scale: 3,),
 
@@ -136,6 +137,67 @@ class PageEleven extends StatelessWidget {
               // ),
             ),
           ),
+
+
+          InkWell(onTap: (){},
+            child: Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Container(
+
+                height: 50,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: AppColor.primarycolor,
+                ),
+
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Text('3 items', style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 18,
+                          ),),
+
+                          SizedBox(width: 6,),
+
+                          Icon(Icons.circle, size: 10, color: Colors.white,),
+                          SizedBox(width: 5,),
+                          Icon(Icons.currency_rupee, size: 22, color: Colors.white,),
+                          SizedBox(width: 5,),
+                          Text('750', style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 18,
+                          ),),
+                        ],
+                      ),
+
+                      Row(
+                        children: [
+                          Text('Proceed to Pay', style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 18,
+                          ),),
+                          SizedBox(width: 5,),
+                          Icon(Icons.keyboard_double_arrow_right, color: Colors.white, size: 25,),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                // ),
+              ),
+            ),
+          ),
+
+
         ],
       ),
     );

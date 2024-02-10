@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ImagePeaker extends StatelessWidget {
-  const ImagePeaker({super.key});
+class LogOutScreen extends StatelessWidget {
+  const LogOutScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-
-      ),
-
-
-
+      body: Center(child: Text('Log Out')),
     );
   }
 }

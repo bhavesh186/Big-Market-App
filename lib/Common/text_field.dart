@@ -3,20 +3,29 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CsCommonTextFieldWidget extends StatefulWidget {
-  const CsCommonTextFieldWidget(
+   CsCommonTextFieldWidget(
      {
       // this.titleText = '',
        // this.titleTextAlign = TextAlign.center,
        required this.text,
         required this.isPassword,
+        this.validator,
+       required this.massage,
+      required this.addController,
        // required this.hintText,
        // required this.textController,
 });
 
  // final String titleText;
  // final TextAlign titleTextAlign;
+   final TextEditingController addController;
   final String text;
+  final String massage;
   final bool isPassword;
+  final validator;
+
+
+
  // final String hintText;
  // final TextEditingController textController;
 
@@ -35,7 +44,14 @@ class _CsCommonTextFieldWidgetState extends State<CsCommonTextFieldWidget> {
           fontSize: 18, fontWeight: FontWeight.w700,
         ),),
         SizedBox(height: 5,),
-        TextField(
+        TextFormField(
+         controller: widget.addController,
+          validator: (validator){
+            if (validator == null || validator.isEmpty) {
+              return widget.massage;
+            }
+            return null;
+          },
 
           obscureText: widget.isPassword,
           decoration: InputDecoration(

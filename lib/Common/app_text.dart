@@ -8,6 +8,9 @@ class AppText{
    static String text2 = "You can pay cash on delivery and Card payment is available";
    static String Headtext3 = "Quick Delivery at Your Doorstep";
    static String text3 = "Deliver your food at your Doorstep";
+   static String tabaddresstitle = 'My Addresses';
+   static String tabOrdertitletext = 'My Orders';
+   static String tabbalancetitel = 'My Balance';
 
    static List<String> pageninetext = [
 

@@ -7,6 +7,9 @@ class AppImage{
   static String takeaway = "Assets/Images/Take Away-pana 1.png";
 
 
+  static String edit = 'Assets/Images/edit (3) 3.png';
+  static String delete = 'Assets/Images/delete 1.png';
+
   static List<String> gridviewimage = [
 
     "Assets/Images/Homepageimg/firstimg1.png",
@@ -32,11 +35,6 @@ class AppImage{
     "Assets/Images/page9/image-removebg-preview (89) 1.png",
   ];
 
-  static List<String> pagetenimg = [
-    "Assets/Images/page10/image-removebg-preview (92) 1.png",
-    "Assets/Images/page10/image-removebg-preview (93) 1.png",
-    "Assets/Images/page10/image-removebg-preview (94) 1.png",
-  ];
 
   static List<String> pageelevenimg = [
         "Assets/Images/image-removebg-preview (84) 2.png",
@@ -44,5 +42,12 @@ class AppImage{
         "Assets/Images/image-removebg-preview (86) 2.png",
         "Assets/Images/image-removebg-preview (87) 2.png",
         "Assets/Images/image-removebg-preview (91) 2.png",
+  ];
+
+  static List<String> storepage = [
+    "Assets/Images/image-removebg-preview (92) 1.png",
+    "Assets/Images/image-removebg-preview (93) 1.png",
+    "Assets/Images/image-removebg-preview (94) 1.png",
+
   ];
 }

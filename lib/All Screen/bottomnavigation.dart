@@ -1,7 +1,10 @@
+import 'package:big_market/All%20Screen/tabbarscreen.dart';
 import 'package:big_market/Common/globle_color.dart';
 import 'package:flutter/material.dart';
 
+import 'Tab Bar Screen/myaddress.dart';
 import 'View/homepage.dart';
+import 'View/page11.dart';
 import 'View/shop.dart';
 import 'View/store.dart';
 
@@ -17,14 +20,9 @@ class _BottomNavigationState extends State<BottomNavigation> {
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     ShopScreen(),
-    // StroePage(),
-
-    Text(
-      'Index 3: Cart',
-    ),
-    Text(
-      'Index 4: Profile',
-    ),
+    StroePage(),
+    PageEleven(),
+    TabBarScreen(),
   ];
   void _onItemTapped(int index) {
     setState(() {
